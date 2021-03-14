@@ -1,6 +1,6 @@
 --- 
-title: "STAB-Tutorials"
-author: "Yihui Xie"
+title: "STAB Tutorials"
+author: "Avi Kenny, Taylor Okonek, Johnny Paige"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 documentclass: book
