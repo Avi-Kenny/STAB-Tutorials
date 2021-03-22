@@ -1,11 +1,6 @@
-fig:nice-fig
-tab:nice-tab
-prerequisites
-intro
-literature
-methods
-applications
-example-one
-example-two
-final-words
-new-chapter-test
+introduction
+fitting-a-bym2-spatial-model-in-inla
+instructions-for-contributors
+notes
+instructions
+tips

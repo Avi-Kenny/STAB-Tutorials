@@ -1,0 +1,27 @@
+# Instructions for contributors
+
+## Notes
+
+- Here are links to the STAB Tutorials [public page](https://bookdown.org/avikenny/STAB-Tutorials/) and [Github repository](https://github.com/Avi-Kenny/STAB-Tutorials)
+- Check out [this tutorial](https://bookdown.org/yihui/bookdown) for more information on Bookdown
+- These instructions assume some familiarity with GitHub
+
+## Instructions
+
+1. Request to be added to the GitHub repo as a collaborator
+    - Once you receive the email invitation, join the repo
+    - Clone the repo to a location on your computer
+2. Open up RStudio and install the **bookdown** package by typing `install.packages('bookdown')`{.R}. Then load the package with `library('bookdown')`{.R}.
+3. To create a new chapter/tutorial, do the following:
+    - Open up the folder on your computer where you cloned the GitHub repo. You should see a set of Rmd files prefixed by `c-` (`c-bym2.Rmd`, `c-instructions.Rmd`, ...). One Rmd file corresponds to one chapter of the STAB Tutorials "book". Create a new Rmd file in this folder with the `c-` prefix in the filename.
+    - The first line of the Rmd file should be a first level header (e.g. `# My new chapter`) corresponding to the chapter title. The rest is completely up to you. Check out the existing chapters for ideas.
+    - Open the file `_bookdown.yml` and add your file to the `rmd_files` vector. The position in the vector dictates the order of the chapters, so list your file where you'd like it to appear.
+4. To edit an existing chapter/tutorial (including one you just created), do the following:
+    - Add content to your file. These files are standard R Markdown files, so you can include text, images, R code, LaTeX, etc.
+    - Commit and push your changes using GitHub.
+    - To preview the site, open RStudio, navigate to the directory where you cloned the repo, and run the following R command: `publish_book(render='local')`{.R}
+    - If you are doing this for the first time, you will be asked to configure a bookdown.org publishing account. Type `y` for "yes" and a browser window should pop up asking you to sign in with a Google account. Choose an account to log in with and follow the prompts. Note that you may be asked to log in a second time. When you reach the page that says "Connect to R", press "Connect", and you should see a message that says "Connection succeeded". Close the browser window and return to RStudio. Once you are back in RStudio, run `publish_book(render='local')`{.R} again. You may see a message that asks whether you want to update the application; type `y` for "yes". This should open a browser window with the site preview.
+
+## Tips
+
+- Include references by adding them to the `book.bib` file in BibTeX format and referencing them inline using syntax like `This is my citation [@xie2015]`.

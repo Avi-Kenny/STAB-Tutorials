@@ -1,0 +1,3 @@
+# Fitting a BYM2 spatial model in INLA
+
+Content of the first tutorial...

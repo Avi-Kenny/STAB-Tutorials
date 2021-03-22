@@ -1,2 +1,2 @@
 # STAB-Tutorials
- Tutorials for the UW STAB working group
+Tutorials for the UW STAB working group
